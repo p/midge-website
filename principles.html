@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+
+<head>
+ <title>Midge</title>
+  <link rel="stylesheet" type="text/css" href="default.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="keywords" content="Timothy, Corbett-Clark, corbettclark, tcorbettclark, midge, bugtracker, bug-tracker, bug" />
+  <meta name="description" content="The midge bug tracking system" />
+  <meta name="revised" content="$Id$" />
+</head>
+<body>
+<div id="hdr">
+
+  <div id="hdrTitle">
+    Midge
+  </div>
+
+  <div id="hdrNav">
+    <a href="index.html">Home</a> &middot;
+    <a href="news.html">News</a> &middot;
+    <a href="principles.html"><strong>Principles</strong></a> &middot;
+    <a href="download.html">Download</a> &middot;
+    <a href="screenshots.html">Screenshots</a> &middot;
+  </div>
+
+</div>
+
+<div id="body">
+
+ <h1>Principles and features</h1>
+  <p>
+   Key principles behind midge include:
+  </p>
+  <ul>
+
+   <li>Minimise the number of states so that the user does not
+   accidentally miss bugs.</li>
+
+   <li>Avoid rarely used state values (e.g. use "new" again rather
+   than "reopened")</li>
+
+   <li>Keep states as orthogonal as possible. (e.g. don't have
+    a "resolved" category which is only relevant when the status is
+    "closed" or "fixed".</li>
+
+   <li>Allow some states to have values dynamically decided by the
+    user (and automatically cleaned up when unused).</li>
+
+  </ul>
+  <p>
+   Some key programming features of Midge include:
+  </p>
+ <ul>
+  <li>Developed entirely in Python.</li>
+  <li>Ever expanding unit test coverage.</li>
+  <li>Normalised SQL tables.</li>
+  <li>No manual database setup/teardown.</li>
+  <li>Import/export API for migrating bugs to/from other systems.</li>
+ </ul>
+
+ <hr />
+
+ <div id="footer">
+  <p>
+   <a href="http://validator.w3.org/check/referer">
+   <img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1!" height="31" width="88" />
+   </a>
+   <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=107307&amp;type=1" width="88" height="31" alt="SourceForge.net Logo" /></a>
+  </p>
+
+  <p>
+   Copyright &copy; 2004, Timothy Corbett-Clark
+  </p>
+ </div>
+</div></body>
+</html>
