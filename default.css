@@ -109,12 +109,18 @@ a:active {
 	margin-top: 10px;
 	padding: 5px 0px 5px 0px;
 	color: #999999;
+
+	border-top: 1px solid #666666;
 }
 
+#footer p {
+	padding: 0px 10px 0px 10px;
+}
+	
 
 /* Generic Classes */
 
-div.code {
+#code {
 	background-color: #e0e0e0;
 	color: #000000;
 	white-space: pre;

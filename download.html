@@ -3,66 +3,82 @@
     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
 
-<head>
- <title>Midge</title>
-  <link rel="stylesheet" type="text/css" href="default.css"/>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <meta name="keywords" content="Timothy, Corbett-Clark, corbettclark, tcorbettclark, midge, bugtracker, bug-tracker, bug" />
-  <meta name="description" content="The midge bug tracking system" />
-  <meta name="revised" content="$Id$" />
-</head>
-<body>
-<div id="hdr">
+ <head>
+  <title>Midge</title>
+   <link rel="stylesheet" type="text/css" href="default.css"/>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+   <meta name="keywords" content="Timothy, Corbett-Clark, corbettclark, tcorbettclark, midge, bugtracker, bug-tracker, bug" />
+   <meta name="description" content="The midge bug tracking system" />
+   <meta name="revised" content="$Id$" />
+ </head>
+ 
+ <body>
 
-  <div id="hdrTitle">
+  <div id="hdr">
+ 
+   <div id="hdrTitle">
     Midge
-  </div>
-
-  <div id="hdrNav">
+   </div>
+ 
+   <div id="hdrNav">
     <a href="index.html">Home</a> &middot;
     <a href="news.html">News</a> &middot;
-    <a href="principles.html">Principles</a> &middot;
+    <a href="about.html">About</a> &middot;
     <a href="download.html"><strong>Download</strong></a> &middot;
     <a href="screenshots.html">Screenshots</a> &middot;
+   </div>
   </div>
-
-</div>
-
-<div id="body">
-
- <h1>Requirements</h1>
-  <p>
-   Midge has been developed and tested with the following software
-   (earlier versions may work): 
-  </p>
-  <ul>
-   <li>postgres-7.4.2</li>
-   <li>psycopg-1.1.11</li>
-   <li>python-2.3.3</li>
-   <li>egenix-mx-base-2.0.4</li>
-  </ul>
-
- <h1>Download</h1>
-  <p>
-   No releases yet - currently only available through CVS. See the <a
-   href="http://sourceforge.net/projects/midge">project page</a> at
-   source forge.
-  </p>
-
- <hr />
-
- <div id="footer">
-  <p>
-   <a href="http://validator.w3.org/check/referer">
-   <img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1!" height="31" width="88" />
-   </a>
-   <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=107307&amp;type=1" width="88" height="31" alt="SourceForge.net Logo" /></a>
-  </p>
-
-  <p>
-   Copyright &copy; 2004, Timothy Corbett-Clark
-  </p>
- </div>
-
-</div></body>
+ 
+  <div id="body">
+ 
+   <h1>Requirements</h1>
+   <p>
+    Midge has been developed and tested with the following software
+    (earlier versions may work): 
+   </p>
+   <ul>
+    <li>postgres-7.4.2</li>
+    <li>psycopg-1.1.11</li>
+    <li>python-2.3.3</li>
+    <li>egenix-mx-base-2.0.4</li>
+   </ul>
+ 
+   <h1>Download</h1>
+   <p>
+    No releases yet - currently only available through CVS. See the <a
+    href="http://sourceforge.net/projects/midge">project page</a> at
+    source forge.
+   </p>
+ 
+   <h1>Installation</h1>
+   For details, see the <tt>README</tt> in the tarball. In short:
+   <ul>
+    <li>Install code using Python's <tt>distutils</tt>.</li>
+    <li>Edit configuration file.</li>
+    <li>Setup database tables.</li>
+    <li>Run daemon.</li>
+   </ul>
+   <p>
+    In other words:
+   </p>
+   <div id="code">
+    sudo python setup.py install
+    vi /etc/midge.conf
+    sudo midge-admin setup
+    midged &amp;
+   </div>
+  </div>
+  <div id="footer">
+   <p>
+    <a href="http://validator.w3.org/check/referer">
+    <img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1!" height="31" width="88" />
+    </a>
+    <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=107307&amp;type=1" width="88" height="31" alt="SourceForge.net Logo" /></a>
+   </p>
+ 
+   <p>
+    Copyright &copy; 2004, Timothy Corbett-Clark
+   </p>
+  </div>
+ </body>
 </html>
