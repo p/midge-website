@@ -121,6 +121,8 @@ a:active {
 /* Generic Classes */
 
 #code {
+	margin-left:20px;
+	margin-right:20px;
 	background-color: #e0e0e0;
 	color: #000000;
 	white-space: pre;
