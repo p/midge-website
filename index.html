@@ -6,66 +6,99 @@
 <!-- $Id$ -->
 
 <head>
-  <title>Midge</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <title>Midge</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 </head>
 <body>
-  <h1>Midge</h1>
-  <p>
-    <small>
-      Original source of these pages is <a href="http://midge.sourceforge.net">http://midge.sourceforge.net</a>.
-    </small>
-  </p>
-  <p>
-    <small>
-      <em>
-        <script type="text/javascript">
-          document.write("Last modified by Timothy Corbett-Clark on "+document.lastModified);
-        </script>
-     </em>
-    </small>
-  </p>
+ <h1>Midge</h1>
+ <p>
+  <small>
+   Original source of these pages is <a href="http://midge.sourceforge.net">http://midge.sourceforge.net</a>.
+  </small>
+ </p>
+ <p>
+  <small>
+   <em>
+    <script type="text/javascript">
+     document.write("Last modified by Timothy Corbett-Clark on "+document.lastModified);
+    </script>
+   </em>
+  </small>
+ </p>
 
-  <hr />
+ <hr />
 
-  <h2>What is Midge?</h2>
-  <p>
-    Some web pages I find useful:
-  </p>
-  <ul> 
-    <li><a href="bookmarks.html">online html.</a></li>
-    <li><a href="bookmarks.ps">postscript version for printing.</a></li>
-  </ul>
+ <h2>What is Midge?</h2>
+ <p>
+  Midge is a system for tracking bugs found during the commercial
+  development of a software product. It is particularly suited to a
+  process for which the filing, managing, fixing, and testing are all
+  undertaken by different roles in a trusted environment.
+ </p>
+ <p>
+  Midge aims to be consistent, self-explanatory, powerful enough to
+  efficiently manage thousands of bugs, require no administration, and
+  be bug-free!
+ </p>
+ <p>
+  If you have any ideas, requests, or problems regarding Midge,
+  please <a href="mailto:tcorbettclark@users.sf.net">send</a> feedback.
+ </p>
 
-  <h2>How to use it</h2>
+ <h2>Principles and features</h2>
   <p>
-    Some software I have written and made publicly available:
+   Key principles behind midge include:
   </p>
   <ul>
-    <li><a href="software/bookmarks/index.html">BookmarksMaker</a>, a set of Python scripts for maintaining my bookmarks.</li>
-    <li><a href="software/pave/index.html">Pave</a>, a set of Bash scripts for automating my Linux builds.</li>
+
+   <li>Minimise the number of states so that the user can easily make
+    queries, without accidentally missing bugs.</li>
+
+   <li>Avoid rarely used statue values (e.g. use "new" again rather
+   than "reopened")</li>
+
+   <li>Keep states as orthogonal as possible. (e.g. don't have
+    a "resolved" category which is only relevent when the status is
+    "closed" or "fixed".</li>
+
+   <li>Allow some states to have values dynamically decided by the
+    user (and automatically cleaned up when unused).</li>
+
   </ul>
-
-  <h2>Requirements</h2>
-  <ul>
-    <li>My DPhil on <a href="research/dphil/index.html">"Explanation from Neural Networks"</a>.</li>
-    <li>Some introductory papers I wrote on <a href="research/ica/index.html">Independent Component Analysis</a></li>
-  </ul>
-
-  <h2>Download</h2>
-  <ul>
-    <li>My DPhil on <a href="research/dphil/index.html">"Explanation from Neural Networks"</a>.</li>
-    <li>Some introductory papers I wrote on <a href="research/ica/index.html">Independent Component Analysis</a></li>
-  </ul>
-
-  <hr />
-
   <p>
-    <a href="http://validator.w3.org/check/referer">
-       <img src="http://www.w3.org/Icons/valid-xhtml11"
-        alt="Valid XHTML 1.1!" height="31" width="88"/>
-    </a>
+   Some key programming features of Midge include:
   </p>
+ <ul>
+  <li>Developed entirely in Python</li>
+  <li>Ever expanding unit test coverage</li>
+  <li>Normalised SQL tables</li>
+  <li>Multiple UIs (currently supports standalone <tt>http</tt> server)</li>
+ </ul>
+
+ <h2>Requirements</h2>
+  <p>
+   Midge has been developed and tested with the following software
+   (earlier versions may work): 
+  </p>
+  <ul>
+   <li>postgres-7.4.2</li>
+   <li>psycopg-1.1.11</li>
+   <li>python-2.3.3</li>
+   <li>egenix-mx-base-2.0.4</li>
+  </ul>
+
+ <h2>Download</h2>
+  <p>
+   No releases yet - currently only available through CVS.
+  </p>
+
+ <hr />
+
+ <p>
+  <a href="http://validator.w3.org/check/referer">
+    <img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1!" height="31" width="88"/>
+  </a>
+ </p>
 
 </body>
 </html>
