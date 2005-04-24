@@ -1,5 +1,5 @@
 user=tcorbettclark
-files="index.html news.html about.html download.html screenshots.html default.css add_new_bug.png list_bugs.png reviewed_bugs.png search_bugs.png view_edit_bug.png"
+files="*.html *.png default.css"
 destination=/home/groups/m/mi/midge/htdocs/
 
 for f in $files; do
